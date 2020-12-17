@@ -4,6 +4,8 @@
 
 
 @section('content')
+<img src="/images/profile.png" alt="Mike Hanon">
+
     <p>Built with &hearts; By Mike Hanon.</p>
 
     <p>
