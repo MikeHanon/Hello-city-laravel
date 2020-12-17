@@ -4,7 +4,7 @@
 
 
 @section('content')
-<img src="/images/profile.png" alt="Mike Hanon">
+<img src="{{asset('images/profile.png')}}" alt="Mike Hanon">
 
     <p>Built with &hearts; By Mike Hanon.</p>
 
