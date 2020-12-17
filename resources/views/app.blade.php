@@ -8,16 +8,21 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
       
     </head>
-    <body>
-        @yield('content')
+    <body class="py-6 flex flex-col justify-between items-center min-h-screen">
+        <main class="flex flex-col justify-center items-center">
+            @yield('content')
+        </main>
+       
         <footer>
-            <p>&copy; Copyright {{date('Y')}} 
+            <p class="text-gray-400">
+                &copy; Copyright {{date('Y')}} 
 
                 @if (! Route::is('about'))
-                &middot; <a href="{{route('about')}}">About Us</a>
+                &middot; <a class="text-red-500 hover:text-red-600 underline" href="{{route('about')}}">About Us</a>
                 @endif
                
             </p>
